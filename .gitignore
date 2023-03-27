@@ -55,4 +55,6 @@ pages/_document.tsx
 # Ignore the "dev" folder
 dev/
 
+
+src/pages/index.js
 ###############################
