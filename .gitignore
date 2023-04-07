@@ -55,6 +55,11 @@ pages/_document.tsx
 # Ignore the "dev" folder
 dev/
 
-
+# Security stuff
+src/components/Icons.js
 src/pages/index.js
+
+# testing
+dev/
+src/pages/projects.js
 ###############################
