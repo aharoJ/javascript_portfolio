@@ -17,7 +17,7 @@
 
 
 
-<h1 align="center"> <b> Portfolio Snippet  </b> </h1>
+<h1 align="center"> <a href=https://aharoj.io> Portfolio Snippet  </a> </h1>
 
 ![Alt text](public/images/git-repo_image.png)
 
