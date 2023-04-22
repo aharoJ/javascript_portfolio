@@ -102,3 +102,6 @@ postcss.config.js
 
 # Ignore Tailwind CSS configuration file
 tailwind.config.js
+
+# Ignore Next.js configuration file
+next.config.js
