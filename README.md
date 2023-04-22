@@ -1,4 +1,4 @@
-<h1 align="center"> <a href=https://aharoj.io> Portfolio Snippet  </a> </h1>
+<h1 align="center"> <b> Angel J. Haro </b>
 <img src="https://docs.google.com/uc?export=download&id=1JqFc6WL-cTtJBQgW9tusQAZhQ3H9hGae" alt="" height="25" >
 <img src="https://docs.google.com/uc?export=download&id=1HsBpakQVutfOmxBcPbGpKdo_oGEoKJZT" alt="" height="35" >
 </h1>
@@ -15,6 +15,9 @@
 <!-- END -->
 
 
+
+
+<h1 align="center"> <a href=https://aharoj.io> Portfolio Snippet  </a> </h1>
 
 ![Alt text](public/images/git-repo_image.png)
 
