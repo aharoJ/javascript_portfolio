@@ -86,3 +86,19 @@ package-lock.json
 # Ignore development build artifacts
 *.pnp.js
 .pnp.js.*
+
+
+# Ignore ESLint configuration file
+.eslintrc.json
+
+# Ignore JSConfig configuration file
+jsconfig.json
+
+# Ignore NPM package configuration file
+package.json
+
+# Ignore PostCSS configuration file
+postcss.config.js
+
+# Ignore Tailwind CSS configuration file
+tailwind.config.js
