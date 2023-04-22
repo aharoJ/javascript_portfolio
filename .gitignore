@@ -63,3 +63,26 @@ src/pages/index.js
 dev/
 src/pages/projects.js
 ###############################
+
+
+# Ignore Next.js build output
+.next/
+
+# Ignore Node modules
+node_modules/
+
+# Ignore package-lock.json file
+package-lock.json
+
+# Ignore environment variables file
+.env.local
+
+# Ignore log files
+*.log
+
+# Ignore eslint cache
+.eslintcache
+
+# Ignore development build artifacts
+*.pnp.js
+.pnp.js.*
