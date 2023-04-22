@@ -38,10 +38,7 @@ next-env.d.ts
 
 
 
-######### JS ignore #########
-pages/index.tsx
-pages/_app.tsx
-pages/_document.tsx
+######### JS ignore ###############################################
 
 # ignore ".trash" directory
 /.trash
@@ -57,14 +54,16 @@ dev/
 
 # Security stuff
 src/components/Icons.js
-src/pages/index.js
-
-# testing
 dev/
-src/pages/projects.js
-###############################
+##############################################################
 
 
+
+
+
+
+
+##############################################################
 # Ignore Next.js build output
 .next/
 
@@ -105,3 +104,4 @@ tailwind.config.js
 
 # Ignore Next.js configuration file
 next.config.js
+##############################################################
