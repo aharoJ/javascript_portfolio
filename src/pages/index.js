@@ -69,8 +69,8 @@ export default function Home() {
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg
                 hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
-                hover:dark:text-light md:p-2 md:mx-4 md:text-base
-                text-base
+                hover:dark:text-light md:p-2 md:mx-4
+                text-base xs:text-xs xs:p-0.5
                 '
                 download={true}
                 > Professional Resume
@@ -83,8 +83,9 @@ export default function Home() {
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg
                 hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
-                hover:dark:text-light md:p-2 md:mx-4 md:text-base
-                ml-8 md:ml-1 mr-8 md:mr-1 text-base
+                hover:dark:text-light md:p-2 md:mx-4
+                ml-8 md:ml-1 mr-8 md:mr-1 
+                text-base xs:text-xs xs:p-0.5
                 '
                 download={true}
                 > Handcrafted Resume
