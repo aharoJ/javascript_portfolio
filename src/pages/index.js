@@ -65,17 +65,33 @@ export default function Home() {
               </p>
               
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href='/resume[angel-haro].pdf' target={'_blank'}
-                className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
+                <Link href='/aharoJ_resume.pdf' target={'_blank'}
+                className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg
                 hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
-                hover:dark:text-light md:p-2 md:mx-4 md:text-base 
-
+                hover:dark:text-light md:p-2 md:mx-4 md:text-base
+                text-base
                 '
                 download={true}
-                > Resume
+                > Professional Resume
                 {/* <LinkArrow className={'xl:hidden'} /> */}
                 </Link> 
+
+{/* lala                 */}
+
+                <Link href='/aharoJ_handcrafted_resume.pdf' target={'_blank'}
+                className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg
+                hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
+               dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
+                hover:dark:text-light md:p-2 md:mx-4 md:text-base
+                ml-8 md:ml-1 mr-8 md:mr-1 text-base
+                '
+                download={true}
+                > Handcrafted Resume
+                {/* <LinkArrow className={'xl:hidden'} /> */}
+                </Link> 
+
+{/* lala                 */}
 
                 <Link href='mailto:haro.j.angel@gmail.com' target={'_blank'}
                 className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
