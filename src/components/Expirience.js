@@ -66,16 +66,7 @@ const Expirience = () =>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
 
 
-                <Details
-                    position='exploreCSR' company='Google' companyLink='https://research.google/outreach/csrmp/' time='January, 2023 - Present'  address='remote'
-                    bullets={[
-                        'Engineered a custom light-dark theme switching mechanism.',
-                        'Employed advanced CSS for dynamic text sizing across devices, ensuring a consistent UX for 95% of users regardless of device size.',
-                        'Structured a Next js portfolio comprising of 30+ components, segregated assets, and files, ensuring an organized and maintainable codebase.',
-                        'Maintained an in-depth research markdown, referencing 20+ vital resources; a commitment to staying abreast of industry standards and innovations.',
-                        'Deployed prioritized object loading for 50+ page elements, improving page responsiveness by 30% and reducing bounce rates.'
 
-                ]} />
 
                 <Details
                     position='Lead Apple Teacher' company='Apple' companyLink='https://education.apple.com/en' time='August, 2021 - September, 2023' address='Los Angeles, CA'
@@ -94,22 +85,12 @@ const Expirience = () =>
                         'Employed Netflix\'s VMAF machine learning algorithms to optimize video quality assessment, enhancing the quality metrics of FHWA public challenges\' content by 7%, and setting a gold standard for federal multimedia deliverables.'
                     ]}
                 />
-                <Details
-                    position='Mutation Testing Researcher' company='University of Kean' companyLink='https://www.kean.edu/offices/research-and-sponsored-programs' time='February, 2023 - October, 2023' address='remote'
-                    bullets={[
-                        'Integrated sophisticated Java benchmark and Maven projects to deliberately introduce small mutations in the code and verify their detection.',
-                        'Leveraged Pitest and Little Darwin to instigate mutations across 500+ code lines, attaining a mutation coverage of 95%.',
-                        'Crafted Python scripts that analyzed 10,000+ Lines of Code (LOC), deriving an average function length and aiding in the optimization of code quality by highlighting areas for refactoring.'                
-                ]} 
-                
-                />
+
 
                 <Details
-                    position='Regional Seller' company='T-mobile' companyLink='https://www.t-mobile.com' time='2019 - 2021'  address='Los Angeles, CA' 
+                    position='Regional Lead Expert ' company='T-mobile' companyLink='https://www.t-mobile.com' time='2019 - 2021'  address='Los Angeles, CA' 
                     bullets={[
                         'Coordinated and delegated team tasks and monitored completion to drive efficiency while generating 63% of the sales and leading by example.',
-                        'Implemented 50% of daily training, job instructions and blueprints to verify completion of assigned tasks with outlined specifications.',
-                        'Achieved 139% increase in store performance and monthly targets, surpassing high-volume stores with 8.7 customer satisfaction.'
                 ]} />
 
                 <Details

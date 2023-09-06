@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Expirience from '@/components/Expirience'
 import Education from '@/components/Education'
+import Research from '@/components/Research'
 import TransitionEffect from '@/components/TransitionEffect'
 
 
@@ -111,6 +112,7 @@ const About = () => {
             <Skills/>
             <Expirience/>
             {/* <Education/> */}
+            <Research/>
             </Layout>
         </main>
     </>
