@@ -67,28 +67,39 @@ const Expirience = () =>
 
 
                 <Details
-                    position='Undergraduate Researcher' company='Google' companyLink='https://research.google/outreach/csrmp/' time='2022 - 2023 [seasonal spring]'  address='Los Angeles, CA'
+                    position='exploreCSR' company='Google' companyLink='https://research.google/outreach/csrmp/' time='January, 2023 - Present'  address='remote'
                     bullets={[
-                        'As a participant in the Google ExploreCSR program, I am gaining expertise in a diverse range of computer science topics.',
-                        'Including python, data manipulation and visualization using matplotlib, numpy, pandas, and seaborn.',
-                        'Web development using javascript, html/css, and React, NextJs, Tailwindcss, Framer; efficient use of the command line intertace (cli) and more.'
+                        'Engineered a custom light-dark theme switching mechanism.',
+                        'Employed advanced CSS for dynamic text sizing across devices, ensuring a consistent UX for 95% of users regardless of device size.',
+                        'Structured a Next js portfolio comprising of 30+ components, segregated assets, and files, ensuring an organized and maintainable codebase.',
+                        'Maintained an in-depth research markdown, referencing 20+ vital resources; a commitment to staying abreast of industry standards and innovations.',
+                        'Deployed prioritized object loading for 50+ page elements, improving page responsiveness by 30% and reducing bounce rates.'
 
                 ]} />
 
                 <Details
-                    position='Swe Instructor (Apple-Teacher)' company='Apple' companyLink='https://education.apple.com/en' time='2022 - Present'  address='Carson, CA'
+                    position='Lead Apple Teacher' company='Apple' companyLink='https://education.apple.com/en' time='August, 2021 - September, 2023' address='Los Angeles, CA'
                     bullets={[
-                        'Developed interactive Swift programming presentations with accompanying exercises, activities, projects, and initiatives for students at institutions w/out programming courses.',
-                        'Maintained a trusting environment where students felt encouraged to participate, ask questions and receive individual attention to ellectively learn to program.',
-                        'Engaged in public speaking to educate schools about different types of technologies, including algorithms and data structures, hacking, web dev, video game dev, machine learning engineering, backend engineering, and operating systems',
+                        'Directed a team of 10 Apple Teachers to introduce fundamental computer science concepts to 13 underprivileged middle schools and high schools, increasing STEM engagement.',
+                        'Facilitated weekly training sessions for both team members and students, ensuring an 83% proficiency in the Apple Education curriculum with a focus on Swift, robotics integrations, and JavaScript.',
+                        'Forged collaborations with LAUSD and Apple, successfully architecting the program\'s infrastructure to address key client requirements and expanding its institutions from 3 to 13, representing a 433% growth.'
                 ]} />
 
+
                 <Details
-                    position='Undergraduate Researcher' company='University of Kean' companyLink='https://www.kean.edu/offices/research-and-sponsored-programs' time='2023 - 2023 [seasonal spring]'  address='Union, NJ'
+                    position='Reverse Engineering Intern' company='Turner-fairbank Highway Research Center' companyLink='#' time='May, 2023 - August, 2023' address='McLean, VA'
                     bullets={[
-                        'Manage and monitored research progress, including conducting literature review and doing a final research presentation along with a poster.',
-                        'Utilized Java benchmark and Maven projects in experiments; Pitest to generate mutations, write Python scripts to find LOC per function of the program.',
-                        'Conduct research to investigate the correlation between mutant score and the size of functions and mutant operators, and measure the effectiveness or test suites by comparing the number of killed mutants to equivalent mutants.',
+                        'Authored a comprehensive documentation repository on openpilot\'s integration, serving as a pivotal resource for federal agents resulting in an improvement in CDA testing accuracy and efficiency.',
+                        'Resolved 9 configuration challenges, with a specific focus on poetry-shell, Carla, Openpilot and created Shell configurations, reducing integration-related errors by 22% guaranteeing consistency across federal vehicle tests.',
+                        'Employed Netflix\'s VMAF machine learning algorithms to optimize video quality assessment, enhancing the quality metrics of FHWA public challenges\' content by 7%, and setting a gold standard for federal multimedia deliverables.'
+                    ]}
+                />
+                <Details
+                    position='Mutation Testing Researcher' company='University of Kean' companyLink='https://www.kean.edu/offices/research-and-sponsored-programs' time='February, 2023 - October, 2023' address='remote'
+                    bullets={[
+                        'Integrated sophisticated Java benchmark and Maven projects to deliberately introduce small mutations in the code and verify their detection.',
+                        'Leveraged Pitest and Little Darwin to instigate mutations across 500+ code lines, attaining a mutation coverage of 95%.',
+                        'Crafted Python scripts that analyzed 10,000+ Lines of Code (LOC), deriving an average function length and aiding in the optimization of code quality by highlighting areas for refactoring.'                
                 ]} 
                 
                 />
