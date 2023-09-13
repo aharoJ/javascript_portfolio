@@ -13,8 +13,9 @@ import chatGPT3 from 'public/images/projects/chatGPT3.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
-const FramerImage= motion(Image);
 
+
+const FramerImage= motion(Image);
 const FeaturedProject= ({type, title, summary, img, link, github})=>{
     return (
         <article className='w-full flex items-center justify-between relative 
@@ -59,7 +60,6 @@ const FeaturedProject= ({type, title, summary, img, link, github})=>{
 }
 
 
-
 const Project=({title, type, img, link, github})=>{  
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl
@@ -95,7 +95,6 @@ const Project=({title, type, img, link, github})=>{
         </article>
     )
 }
-
 
 
 const Projects = () => {
