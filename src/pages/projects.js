@@ -26,11 +26,11 @@ const FramerImage= motion(Image);
 const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
     return (
         <article className='w-full flex items-center justify-between relative 
-        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-2 dark:bg-dark dark:border-light
+        rounded-3xl border border-solid border-dark bg-light p-0 dark:bg-dark dark:border-light
         
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
 
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2.5rem] bg-dark dark:bg-light
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[101%] rounded-[2.5rem] bg-dark dark:bg-light
             rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
 
             <Link href={link} target='_blank' className='w-3/4 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
@@ -42,7 +42,8 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
                     />
             </Link>
 
-            <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
+            <div className='w-3/4 flex flex-col items-start justify-between p-2 md:w-full  '>
+                {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <div className='flex flex-wrap space-x-2 justify-center md:hidden'>
                     {hashtags.map((tag, index) => (
                         <span key={index} className='dark:text-light text-dark font-thin text-xl xs:text-base'>
@@ -51,6 +52,7 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
                     ))}
                 </div>
 
+                {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-4xl text-primary font-bold dark:text-primaryDark sm:text-sm'>{title}</h2>
                 </Link>
@@ -328,7 +330,6 @@ const Projects = () => {
                 </div>
             </div> */}
 export default Projects
-
 
 
 
