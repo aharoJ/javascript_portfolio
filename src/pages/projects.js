@@ -14,7 +14,7 @@ import machinelearning from 'public/images/projects/machine-learning.png';
 import portfolio from 'public/images/projects/portfolio.png';
 import alacritty from 'public/images/projects/vim.png';
 import hackingtwitter from 'public/images/projects/hacking-twitter.png'
-import yabai_skhd from 'public/images/projects/yabai_skhd.png';
+import skhd_yabai from 'public/images/projects/yabai_skhd.png';
 import tmux from 'public/images/projects/tmux.png';
 import lf from 'public/images/projects/lf.png';
 import starship from 'public/images/projects/starship.png';
@@ -46,7 +46,7 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <div className='flex flex-wrap space-x-2 justify-center md:hidden'>
                     {hashtags.map((tag, index) => (
-                        <span key={index} className='dark:text-light text-dark font-thin text-xl xs:text-base'>
+                        <span key={index} className='dark:text-light text-dark font-thin text-md xs:text-base'>
                             #{tag}
                         </span>
                     ))}
@@ -111,7 +111,7 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
 
                     <div className='flex flex-wrap justify-center ml-4 space-x-2 '>
                         {hashtags.map((tag, index) => (
-                            <span key={index} className='dark:text-light text-dark font-thin text-base'>
+                            <span key={index} className='dark:text-light text-dark font-thin text-md'>
                                 #{tag}
                             </span>
                         ))}
@@ -141,15 +141,15 @@ const Projects = () => {
 
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Full Stack        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Full Stack'  className='mb-8 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-        <div className='grid grid-cols-12 gap-24 gap-y-8 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+        <div className='grid grid-cols-12 gap-24 gap-y-8 gap-x-8  md:gap-y-10 md:gap-x-6'>
                 <div className='col-span-12'>
                     <FeaturedProject 
                         title='Reverse engineering twitter a.k.a hacking '
                         img={hackingtwitter}
-                        summary="Solo reverse engineering Twitter. Stack: Spring Boot, Java, React, TypeScript, PostgreSQL. "
+                        summary="Solo reverse engineering Twitter. Stack: Spring Boot, Java, React, TypeScript, postgresql. "
                         github='https://github.com/aharoJ/twitter-clone'
                         link='https://github.com/aharoJ/twitter-clone'
-                        hashtags={['Twitter [X]', 'SpringBoot', 'Java', 'React', 'TypeScript', 'PostgreSQL']}
+                        hashtags={['twitter [x]', 'spring boot', 'java', 'react', 'typescript', 'postgreSQL']}
 
                     />
                 </div>
@@ -160,7 +160,7 @@ const Projects = () => {
                     summary='Apple fullstack app using Typescript, Jsx, Tailwindcss, NextJs, Redux, Sanity, Stripe Studio and more...'
                     github='https://github.com/aharoJ/Apple_Re-design'
                     link='https://github.com/aharoJ/Apple_Re-design'
-                    hashtags={[ 'Fullstack', 'Typescript', 'TSX', 'TailwindCSS', 'NextJS', 'Redux', 'Sanity']}
+                    hashtags={[ 'fullstack', 'typescript', 'tsx', 'tailwindCSS', 'nextJs', 'redux', 'sanity']}
                     />
                 </div>
                 
@@ -169,15 +169,14 @@ const Projects = () => {
 
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Backend Dev          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Backend Dev'  className='mt-8 mb-8 text-6xl font-light sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-        <div className='grid grid-cols-12 gap-24 gap-y-8 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+        <div className='grid grid-cols-12 gap-x-12 gap-y-8 md:gap-y-10 md:gap-x-6'>
             <div className='col-span-6 sm:col-span-12'>
                 <Project 
                     img={inboxapp}
                     title='Inbox Application'
-                    summary=''
                     github='https://github.com/aharoJ/InboxApp'
                     link='https://github.com/aharoJ/InboxApp'
-                    hashtags={['Java', 'Spring-boot', 'Spring-security', 'Spring-security', 'Spring-security']} // <-- Added the hashtags prop here
+                    hashtags={['java', 'spring boot', 'spring security', 'thymleaf']} // <-- Added the hashtags prop here
                 /> 
             </div>
         </div>
@@ -185,15 +184,14 @@ const Projects = () => {
 
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Frontend Dev          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Frontend Dev'  className='mt-8 mb-8 text-6xl font-light sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-        <div className='grid grid-cols-12 gap-24 gap-y-8 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+        <div className='grid grid-cols-12 gap-x-12 gap-y-8 md:gap-y-10 md:gap-x-6'>
             <div className='col-span-6 sm:col-span-12'>
                 <Project 
                     img={portfolio}
                     title='Portfolio'
-                    summary=''
                     github='https://github.com/aharoJ/portfolio'
                     link='https://github.com/aharoJ/portfolio'
-                    hashtags={['JSX', 'NextJs', 'Tailwindcss', 'Motion-Frame']} // <-- Added the hashtags prop here
+                    hashtags={['jsx', 'nextJs', 'tailwindcss', 'motion frame']} // <-- Added the hashtags prop here
                 /> 
             </div>
 
@@ -203,7 +201,7 @@ const Projects = () => {
                     img={chatgpt3}
                     github='https://github.com/aharoJ/chatGPT3_React'
                     link='https://github.com/aharoJ/chatGPT3_React'
-                    hashtags={['React', 'Html', 'Css', 'Javascript']} // <-- Added the hashtags prop here
+                    hashtags={['react', 'html', 'css', 'javascript']} // <-- Added the hashtags prop here
                 />
             </div>
         </div>
@@ -211,7 +209,7 @@ const Projects = () => {
 
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Machine Learning          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Machine Learning'  className=' mt-20 b-8 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-        <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+        <div className='grid grid-cols-12 gap-x-12 gap-y-32 md:gap-y-10 md:gap-x-6'>
             <div className='col-span-6 sm:col-span-12'>
                 <Project 
                     title='Machine Learning'
@@ -219,7 +217,7 @@ const Projects = () => {
                     summary='Over 8,000 lines of markdown notes on Artificial Intelligence, Capstone Project, Code, Documentation and more..,'
                     github='https://github.com/aharoJ/opensource/tree/main/machine-learning'
                     link='https://github.com/aharoJ/opensource/tree/main/machine-learning'
-                    hashtags={['AI', 'Markdown', 'Capstone', 'Documentation']} // <-- Added the hashtags prop here
+                    hashtags={['ai', 'machine learning', 'capstone', 'deep learning', 'jupyter']} // <-- Added the hashtags prop here
 
                 /> 
             </div>
@@ -228,12 +226,11 @@ const Projects = () => {
 
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Dot Files          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Dot Files'  className='mb-8 mt-20 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-        <div className='grid grid-cols-12 gap-24 gap-y-8 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+        <div className='grid grid-cols-12 gap-x-12 gap-y-8 md:gap-y-10 md:gap-x-6'>
             <div className='col-span-6 sm:col-span-12'>
                 <Project 
                     title='yabai-skhd-config'
-                    img={yabai_skhd}
-                    summary=''
+                    img={ skhd_yabai}
                     github='https://github.com/aharoJ/yabai-skhd-config'
                     link='https://github.com/aharoJ/yabai-skhd-config'
                     hashtags={['hacking MacOS', 'shell scripting', 'skhd-config', 'yabai-config']} // <-- Added the hashtags prop here
@@ -243,7 +240,6 @@ const Projects = () => {
                 <Project 
                     title='tmux-config'
                     img={tmux}
-                    summary=''
                     github='https://github.com/aharoJ/tmux-config'
                     link='https://github.com/aharoJ/tmux-config'
                     hashtags={[ 'handcrafted design', 'catppuccin', 'tmux-config']} // <-- Added the hashtags prop here
@@ -253,7 +249,6 @@ const Projects = () => {
                 <Project 
                     title='lf-config'
                     img={lf}
-                    summary=''
                     github='https://github.com/aharoJ/lf-config'
                     link='https://github.com/aharoJ/lf-config'
                     hashtags={['shell scripting', 'custom Scripts', 'kitty-config', 'lf-config']} // <-- Added the hashtags prop here
@@ -263,7 +258,6 @@ const Projects = () => {
                 <Project 
                     title='starship-config'
                     img={starship}
-                    summary=''
                     github='https://github.com/aharoJ/starship-config'
                     link='https://github.com/aharoJ/starship-config'
                     hashtags={['custom toml file', 'hand-picked colors', 'timezone', 'starship-config']} // <-- Added the hashtags prop here
@@ -284,7 +278,6 @@ const Projects = () => {
                 <Project 
                     title='alacritty-config'
                     img={alacritty}
-                    summary=''
                     github='https://github.com/aharoJ/alacritty-config'
                     link='https://github.com/aharoJ/alacritty-config'
                     hashtags={['terminal emulator', 'yalm file', 'alacritty-config']} // <-- Added the hashtags prop here
