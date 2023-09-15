@@ -75,10 +75,14 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        Project         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 const Project = ({ title, img, link, github, hashtags = [] }) => {  
     return (
-        <article className='w-full flex flex-col items-center justify-center rounded-2xl
-        border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark
-            rounded-br-3xl  dark:bg-light xs:rounded-br-2xl xs:-right-1.5 '/>
+        <article className='w-full flex flex-col items-center justify-center rounded-2xl p-2 relative
+        border border-solid border-dark bg-light dark:bg-dark dark:border-light
+        md:p-2
+        '>
+            
+            <div className='absolute top-0 -right-2 -z-10 w-[102%] h-[101%] rounded-[2.5rem] bg-dark
+            rounded-br-3xl  dark:bg-light 
+            md:rounded-br-xl md:-right-0.8 md:w-[101%] md:h-[102%]'/>
             
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt='aharoJ' className='w-full h-auto'
@@ -105,7 +109,7 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
                         </Link>
                     </div>
 
-                    <div className='flex flex-wrap justify-center ml-4 space-x-2 md:hidden'>
+                    <div className='flex flex-wrap justify-center ml-4 space-x-2 '>
                         {hashtags.map((tag, index) => (
                             <span key={index} className='dark:text-light text-dark font-thin text-base'>
                                 #{tag}
