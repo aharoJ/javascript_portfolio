@@ -144,7 +144,7 @@ const Projects = () => {
         <div className='grid grid-cols-12 gap-24 gap-y-8 gap-x-8  md:gap-y-10 md:gap-x-6'>
                 <div className='col-span-12'>
                     <FeaturedProject 
-                        title='Reverse engineering twitter a.k.a hacking '
+                        title='Hacking Twitter '
                         img={hackingtwitter}
                         summary="Solo reverse engineering Twitter. Stack: Spring Boot, Java, React, TypeScript, postgresql. "
                         github='https://github.com/aharoJ/twitter-clone'
@@ -155,7 +155,7 @@ const Projects = () => {
                 </div>
                 <div className='col-span-12'>
                     <FeaturedProject 
-                    title='Apple Re-design'
+                    title='Apple Redesign'
                     img={apple}
                     summary='Apple fullstack app using Typescript, Jsx, Tailwindcss, NextJs, Redux, Sanity, Stripe Studio and more...'
                     github='https://github.com/aharoJ/Apple_Re-design'
