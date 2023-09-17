@@ -1,12 +1,12 @@
-import AnimatedText from '@/components/AnimatedText'
-import { GithubIcon } from '@/components/Icons'
+import AnimatedText from '@/components/Animation/TextAnimation'
+import { GithubIcon } from '@/components/icon/Icons-OLD'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import TransitionEffect from '@/components/TransitionEffect'
+import TransitionEffect from '@/components/Animation/TransitionEffect'
 import apple from 'public/images/projects/apple.png';
 import vivaldi from 'public/images/projects/vivaldi.png';
 import inboxapp from 'public/images/projects/inbox-app.png';
@@ -26,9 +26,8 @@ const FramerImage= motion(Image);
 const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
     return (
         <article className='w-full flex items-center justify-between relative 
-        rounded-3xl border border-solid border-dark bg-light p-0 dark:bg-dark dark:border-light
-        
-        lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+            rounded-3xl border border-solid border-dark bg-light p-2 dark:bg-dark dark:border-light
+            lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
 
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[101%] rounded-[2.5rem] bg-dark dark:bg-light
             rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
@@ -80,7 +79,7 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
         md:p-2
         '>
             
-            <div className='absolute top-0 -right-2 -z-10 w-[102%] h-[101%] rounded-[2.5rem] bg-dark
+            <div className='absolute top-0 -right-2 -z-10 w-[101%] h-[101%] rounded-[2.5rem] bg-dark
             rounded-br-3xl  dark:bg-light 
             md:rounded-br-xl md:-right-0.8 md:w-[101%] md:h-[102%]'/>
             
