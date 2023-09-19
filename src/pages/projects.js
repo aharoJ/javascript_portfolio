@@ -1,5 +1,5 @@
 import AnimatedText from '@/components/Animation/TextAnimation'
-import { GithubIcon } from '@/components/icon/Icons-OLD'
+import { GithubIcon } from '@/components/icons/Icons-OLD'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -45,7 +45,8 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <div className='flex flex-wrap space-x-2 justify-center md:hidden'>
                     {hashtags.map((tag, index) => (
-                        <span key={index} className='dark:text-light text-dark font-thin text-md xs:text-base'>
+                        <span key={index} className='dark:text-light/80 text-dark/80 tracking-tighter font-light text-xl
+                        md:text-sm md:font-light md:tracking-tighter '>
                             #{tag}
                         </span>
                     ))}
@@ -53,7 +54,7 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
 
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-4xl text-primary font-bold dark:text-primaryDark sm:text-sm'>{title}</h2>
+                    <h2 className='my-2 w-full text-left text-4xl text-gray-400 dark:text-orange-200 font-semibold sm:text-sm'>{title}</h2>
                 </Link>
 
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
@@ -93,7 +94,7 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
             <div className='w-full flex flex-col items-start justify-between mt-4'>
 
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-lg'>{title}</h2>
+                    <h2 className='my-2 w-full text-left text-3xl text-gray-400 dark:text-orange-200 font-semibold lg:text-lg'>{title}</h2>
                 </Link>
 
                 <div className='w-full mt-2 flex items-center justify-between'>
@@ -110,7 +111,9 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
 
                     <div className='flex flex-wrap justify-center ml-4 space-x-2 '>
                         {hashtags.map((tag, index) => (
-                            <span key={index} className='dark:text-light text-dark font-thin text-md'>
+                            <span key={index} className='dark:text-light/80 text-dark/80 font-light text-xl
+                            md:text-sm md:font-light md:tracking-tighter 
+                            '>
                                 #{tag}
                             </span>
                         ))}
