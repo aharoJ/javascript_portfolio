@@ -11,21 +11,6 @@
 <a href="https://leetcode.com/aharoJ/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" alt="LeetCode" /></a>&nbsp;
 </div>  
 
-<!-- # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     .................................       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ # -->
-<!-- START -->
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <img src="z/tfhrc_selfie.png" alt="Image 1 Description" />
-    </td>
-    <td valign="top" width="50%">
-      <img src="z/workflow_selfie.png" alt="Image 2 Description" />
-    </td>
-  </tr>
-</table>
-
-
-
 
 
 
