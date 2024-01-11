@@ -1,5 +1,5 @@
 import AnimatedText from '@/components/Animation/TextAnimation'
-import { GithubIcon } from '@/components/icons/Icons-OLD'
+import { GithubIcon } from '../components/icons/SvgIcons'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -187,7 +187,7 @@ const Projects = () => {
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Frontend Dev          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <AnimatedText text='Frontend Dev'  className='mt-8 mb-8 text-6xl font-light sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
         <div className='grid grid-cols-12 gap-x-12 gap-y-8 md:gap-y-10 md:gap-x-6'>
-            <div className='col-span-6 sm:col-span-12'>
+            {/* <div className='col-span-6 sm:col-span-12'>
                 <Project 
                     img={portfolio}
                     title='Portfolio'
@@ -195,7 +195,7 @@ const Projects = () => {
                     link='https://github.com/aharoJ/portfolio'
                     hashtags={['jsx', 'nextJs', 'tailwindcss', 'motion frame']} // <-- Added the hashtags prop here
                 /> 
-            </div>
+            </div> */}
 
             <div className='col-span-6  sm:col-span-12'>
                 <Project 

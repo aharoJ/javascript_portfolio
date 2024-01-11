@@ -43,7 +43,7 @@ const About = () => {
                   33vw" />       
                     <div className='justify-content self-start mt-2 lg:self-center'>
                           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Resume         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-                          <Link href='/resume_angel_haro.pdf' target={'_blank'}
+                          {/* <Link href='/resume_angel_haro.pdf' target={'_blank'}
                           className='flex items-center  bg-dark text-light p-1.5 px-6 rounded-lg
                           hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                           dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
@@ -51,10 +51,10 @@ const About = () => {
                           text-base xs:text-sm xs:p-0.5
                           '
                           >  Resume 
-                          </Link> 
+                          </Link>  */}
 
 
-                          <Link href='mailto:haro.j.angel@gmail.com' target={'_blank'}
+                          <Link href='https://github.com/aharoJ' target={'_blank'}
                           className='flex items-center mt-2 bg-gray-800 text-light p-1.5 px-6 rounded-lg
                           hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                           dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light
@@ -62,7 +62,7 @@ const About = () => {
                           text-base xs:text-sm xs:p-0.5
                           '
                           > 
-                          Contact 
+                          Github 
                           </Link>           
                     </div>
               </div>
@@ -72,7 +72,7 @@ const About = () => {
 
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Languages | Hobbies         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
             <div className='w-full p-2 flex flex-col md:flex-row md:p-0 md:items-start md:justify-between md:flex-wrap'>
-              <BulletPoints className="mb-4" title="Java" values={["Spring-Boot", "Spring-Security", "Maven"]} />
+              <BulletPoints className="mb-4" title="Java" values={["Spring Boot", "SpringSecurity", "Maven"]} />
               <BulletPoints className="mb-4" title="Shell" values={["Script Automation", "Unix-based Scripting", "YAML", "TOML"]} />
             </div>
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */} 

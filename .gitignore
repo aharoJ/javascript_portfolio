@@ -10,10 +10,13 @@
 /.next/
 /out/
 index.js
-testing.js
+**testing.js
+**test.js
 me.js
 SocialMediaLinks.js
 SocialMedia.js
+src/dev/
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # production
 /build

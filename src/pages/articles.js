@@ -1,11 +1,11 @@
-import AnimatedText from '@/components/AnimatedText'
+import AnimatedText from '@/components/Animation/TextAnimation'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import Head from 'next/head'
 import { motion, useMotionValue } from 'framer-motion'
-import TransitionEffect from '@/components/TransitionEffect'
+import TransitionEffect from '@/components/Animation/TransitionEffect'
 const FramerImage= motion(Image);
 import under_devlopment from 'public/images/articles/actively_dev.jpeg';
 import more_development from 'public/images/articles/work-to-be-done.jpeg'
@@ -20,8 +20,9 @@ const MovingImg=({title, img, link})=>
   function handleMouse(event)
   { 
     imgRef.current.style.display= 'inline-block';
-    x.set(event.pageX)
-    y.set(-10);
+    x.set(500)
+    // x.set(event.pageX
+    y.set(0);
   }
 
   function handleMouseLeave(event)
