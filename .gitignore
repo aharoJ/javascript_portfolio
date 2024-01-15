@@ -12,10 +12,12 @@
 index.js
 **testing.js
 **test.js
+**test.jsx
 me.js
 SocialMediaLinks.js
 SocialMedia.js
 src/dev/
+**mt/
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # production
