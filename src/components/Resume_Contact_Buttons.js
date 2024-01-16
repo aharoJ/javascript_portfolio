@@ -22,12 +22,9 @@ const Resume_Contact_Buttons = () => {
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Contact         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 
                 <Tooltip content="aharoJair@gmail.com" className="bg bg-transparent text-red-950 dark:text-white text-xs">
-                <Link href="mailto:aharoJair@gmail.com" target={"_blank"}
-                    className="mb-6 text-2xl font-medium capitalize 
-                    hover:underline-offset-4
-                    text-dark underline dark:text-light 
-                    md:text-2xl xs:p-2
-                ">  Contact 
+                <Link href="mailto:aharoJair@gmail.com" target={"_blank"} className="mb-6 text-2xl font-medium capitalize hover:underline-offset-4
+                text-dark underline dark:text-light md:text-2xl xs:p-2 ">  
+                   Contact 
                 </Link> 
                 </Tooltip>               
         </div>
