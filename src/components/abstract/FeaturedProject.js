@@ -31,11 +31,10 @@ const FeaturedProject = ({hashtags =[], title, summary, img, link, github}) => {
         </div>
             
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         | RIGHT SIDE        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-            <div className='w-1/2 flex flex-col p-1 md:w-full  '>
-
+            <div className='w-1/2 flex flex-col p-5 md:w-full  '>
                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         HashMap        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
                 <div className='flex flex-row justify-end md:w-full'>
-                    <div className='flex flex-wrap space-x-2 justify-end items-start md:hidden'>
+                    <div className='flex flex-wrap space-x-4 justify-end items-start md:hidden'>
                         {hashtags.map((tag, index) => (
                             <span key={index} 
                             className='dark:text-light/80 text-dark/80 font-light text-xl
