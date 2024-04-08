@@ -17,6 +17,7 @@ src/dev/
 backup/
 temp/
 test*
+ScrollTimeLineAnimation.js
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
