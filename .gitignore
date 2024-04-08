@@ -9,7 +9,6 @@
 /coverage
 /.next/
 /out/
-index.js
 **testing.js
 **test.js
 **test.jsx
