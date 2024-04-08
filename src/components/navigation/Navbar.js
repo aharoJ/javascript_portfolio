@@ -1,5 +1,5 @@
 import React from 'react';
-import ColorfulAharoJHover from 'src/components/Animation/ColorfulAharoJHover.js';
+import ColorfulAharoJHover from 'src/components/animation/ColorfulAharoJHover.js';
 import Desktop from './DesktopNav.js';
 import Mobile from './MobileNav.js';
 
