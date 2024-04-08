@@ -1,11 +1,11 @@
-import AnimatedText from '@/components/Animation/TextAnimation'
+import AnimatedText from '@/components/animation/TextAnimation'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import Head from 'next/head'
 import { motion, useMotionValue } from 'framer-motion'
-import TransitionEffect from '@/components/Animation/TransitionEffect'
+import TransitionEffect from '@/components/animation/TransitionEffect'
 const FramerImage= motion(Image);
 import under_devlopment from 'public/images/articles/actively_dev.jpeg';
 import more_development from 'public/images/articles/work-to-be-done.jpeg'
