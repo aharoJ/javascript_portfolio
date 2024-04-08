@@ -14,10 +14,11 @@ index.js
 **test.js
 **test.jsx
 me.js
-SocialMediaLinks.js
-SocialMedia.js
 src/dev/
-**mt/
+backup/
+temp/
+test*
+
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # production
