@@ -3,10 +3,10 @@ import Head from "next/head";
 import React from "react";
 import TransitionEffect from "@/components/animation/TransitionEffect";
 import CoreSkills from "../components/CoreSkills";
-import Selfie from "@/components/experience/Selfie";
 import DoughnutChart from "@/components/abstract/DoughnutChart";
 import Timeline from "@/components/experience/TimeLine";
 import TabsLanguageSkills from "@/components/abstract/TabsLanguageSkills";
+import VerticalSelfie from "@/components/experience/VerticalSelfie";
 
 const About = () => {
   return (
@@ -21,7 +21,7 @@ const About = () => {
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       SELFIE | DOUGHNUT          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="flex w-full">
             <div className="flex w-2/5 justify-center p-2  ">
-              <Selfie />
+              <VerticalSelfie />
             </div>
             <div className="flex w-3/5 items-center p-2">
               <DoughnutChart />
