@@ -7,6 +7,7 @@ import DoughnutChart from "@/components/abstract/DoughnutChart";
 import Timeline from "@/components/experience/TimeLine";
 import TabsLanguageSkills from "@/components/abstract/TabsLanguageSkills";
 import VerticalSelfie from "@/components/experience/VerticalSelfie";
+import TextAnimation from "@/components/animation/TextAnimation";
 
 const About = () => {
   return (
@@ -20,13 +21,23 @@ const About = () => {
         <Layout className="p-0 lg:p-24 md:pt-16 sm:pt-8">
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       SELFIE | DOUGHNUT          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="flex w-full">
-            <div className="flex w-2/5 justify-center p-2 md:hidden ">
+            <div className="flex w-2/5 justify-start md:hidden ">
               <VerticalSelfie />
             </div>
-            <div className="flex w-3/5 items-center p-2 md:hidden ">
-              <DoughnutChart />
+            <div className="flex w-3/5 flex-row items-center p-0 md:hidden ">
+              <div className="w-[40%] items-start justify-start">
+                <TextAnimation
+                  text="SKILLS LANGUAGES FRAMEWORKS DATABASES LIBRARIES "
+                  className="inline-block w-full  justify-start  text-4xl font-light capitalize tracking-tight 
+                    text-gray-400  dark:text-orange-200  md:mb-8 md:hidden md:text-4xl md:font-light md:!normal-case"
+                />
+              </div>
+              <div className="w-[60%] ">
+                <DoughnutChart />
+              </div>
             </div>
           </div>
+
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       iPHONE: SELFIE | DOUGHNUT          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="hidden lg:hidden md:flex md:w-[100%] md:flex-col">
             <VerticalSelfie />
