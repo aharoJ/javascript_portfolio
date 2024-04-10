@@ -138,14 +138,13 @@ const DoughnutChart = () => {
   };
 
   return (
-    <div className="w-auto justify-evenly items-end">
+    <div className="w-auto items-end justify-evenly">
       {/* Skills Chart */}
       {/* <h2 className="text-xl font-bold mb-2">Skills</h2> */}
       <TextAnimation
         text="Languages"
-        className="font-light tracking-tight justify-center text-2xl
-                md:text-5xl md:font-light md:flex-wrap md:mb-8 md:!normal-case dark:text-orange-200 text-gray-400
-                "
+        className="justify-center text-2xl font-light tracking-tight text-gray-400 dark:text-orange-200 
+        md:mb-8 md:text-4xl md:font-light md:!normal-case"
       />
       <Doughnut data={skillsData} options={options} />
     </div>
