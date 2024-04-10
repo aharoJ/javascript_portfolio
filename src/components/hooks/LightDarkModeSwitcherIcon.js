@@ -30,13 +30,19 @@ const LightDarkModeSwticherIcon = ({ size, mobilesize, className = "" }) => {
       onClick={() => setTheme(isLightMode ? "dark" : "light")}
       whileHover={{ y: -2 }}
       whileTap={{ scale: 0.9 }}
-      className={`cursor-pointer rounded-full p-5 transition-all hover:bg-orange-800/20 dark:hover:bg-gray-700 md:p-2 ${className}`}
+      className={`cursor-pointer rounded-full p-3 transition-all hover:bg-gray-200 dark:hover:bg-gray-700 md:p-2 ${className}`}
     >
       <motion.a className="mx-0 p-0">
         {isLightMode ? (
-          <MoonIcon size={iconSize} className={`text-gray-600  mx-2 ${MoonIcon}`} />
+          <MoonIcon
+            size={iconSize}
+            className={`mx-1.5 text-gray-600 ${MoonIcon}`}
+          />
         ) : (
-          <SunIcon size={iconSize} className={`text-orange-200 mx-1.5 ${SunIcon}`} />
+          <SunIcon
+            size={iconSize}
+            className={`mx-1 text-orange-200 ${SunIcon}`}
+          />
         )}
       </motion.a>
     </motion.div>
