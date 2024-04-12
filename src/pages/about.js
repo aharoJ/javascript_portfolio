@@ -49,8 +49,7 @@ const About = () => {
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       LANGUAGE TABS         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="mt-12 flex w-[100%] md:hidden ">
-            {/* <HorizontalTabsWithIcon /> */}
+          <div className="mt-12 flex w-[100%] justify-evenly md:hidden ">
             <TabsLanguageSkills />
           </div>
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
