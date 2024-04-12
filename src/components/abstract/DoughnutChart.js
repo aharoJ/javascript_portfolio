@@ -11,7 +11,6 @@ import {
   Legend,
   ArcElement,
 } from "chart.js";
-import TextAnimation from "../animation/TextAnimation";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -25,38 +24,27 @@ ChartJS.register(
 const DoughnutChart = () => {
   const skillsData = {
     labels: [
-      "Java",
-      "Spring",
-      "Bash",
-      "Fish",
-      "Python",
-      "TF",
-      "Django",
-      "Js",
-      "Ts",
-      "React",
-      "Next.js",
-      "SQL/NoSQL",
+      "Java", // 80
+      "Spring", // 60
+      "Maven", // 33
+      "Bash", // 70
+      "Fish", // 85
+      "Python", // 50
+      "TF", // 10
+      "Django", //15
+      "Js", // 40
+      "Ts", // 30
+      "React", // 30
+      "Next.js", // 40
+      "SQL/NoSQL", // 45
     ],
     datasets: [
       {
         label: "Understanding",
-        data: [
-          90,
-          70,
-          90,
-          95,
-          65,
-          15,
-          25,
-          50, // JS
-          38,
-          45,
-          65,
-          75,
-        ],
+        data: [80, 60, 33, 70, 85, 50, 10, 15, 40, 30, 30, 40, 45],
         backgroundColor: [
           "rgba(255, 159, 64, 0.5)",
+          "rgba(54, 162, 235, 0.5)",
           "rgba(255, 99, 132, 0.5)",
           "rgba(75, 192, 192, 0.5)",
           "rgba(255, 205, 86, 0.5)",
@@ -138,14 +126,7 @@ const DoughnutChart = () => {
   };
 
   return (
-    <div className="w-auto items-end justify-evenly">
-      {/* Skills Chart */}
-      {/* <h2 className="text-xl font-bold mb-2">Skills</h2> */}
-      <TextAnimation
-        text="Languages"
-        className="justify-center text-2xl font-light tracking-tight text-gray-400 dark:text-orange-200 
-        md:mb-8 md:text-4xl md:font-light md:!normal-case"
-      />
+    <div className="w-full items-end justify-end">
       <Doughnut data={skillsData} options={options} />
     </div>
   );
