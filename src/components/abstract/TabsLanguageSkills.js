@@ -56,21 +56,21 @@ function TabsLanguageSkills() {
         {tabsData.map((tab, index) => (
           <button
             key={index}
-            className={`flex items-center rounded-xl border px-4 py-2 text-dark ${
+            className={`flex items-center rounded-xl border px-4 py-3 text-dark ${
               activeTab === index
                 ? "bg-gray-200 dark:bg-orange-200"
                 : "bg-white"
             }`}
             onClick={() => toggleTab(index)}
           >
-            <tab.icon className="mr-2" />
+            <tab.icon className="mx-3 text-2xl" />
             {tab.label}
           </button>
         ))}
       </div>
       <div className="mt-4">
         {activeTab !== null && (
-          <div className="mx-6 p-2 text-xl font-light text-gray-500 dark:text-orange-200">
+          <div className="mx-6 p-2 text-2xl font-light text-gray-500 dark:text-orange-200">
             {tabsData[activeTab].content}
           </div>
         )}
