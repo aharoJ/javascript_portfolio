@@ -7,9 +7,9 @@ const ResumeContactButton = () => {
       <div className="w-1/2 whitespace-nowrap md:flex md:w-[100%] md:flex-row md:justify-evenly">
         <Link
           href="https://aharoj.io/about"
-          className="items-center rounded-lg border border-solid border-transparent bg-slate-600 p-2 px-2 text-xl text-light 
-          hover:border-dark hover:bg-light hover:text-dark dark:bg-orange-200 dark:text-dark hover:dark:border-light
-          hover:dark:bg-dark hover:dark:text-orange-200 md:mx-0 md:w-auto md:p-1.5 md:text-xl"
+          className="items-center rounded-lg border border-solid border-transparent bg-slate-600 p-4 px-4 text-2xl text-light 
+            hover:border-dark hover:bg-light hover:text-dark dark:bg-blue-500 dark:text-dark hover:dark:border-light
+            hover:dark:bg-dark hover:dark:text-orange-200 md:mx-0 md:w-auto md:p-1.5 md:text-xl"
         >
           My Journey
         </Link>
@@ -19,8 +19,8 @@ const ResumeContactButton = () => {
         <Link
           href="mailto:aharoJair@gmail.com"
           target={"_blank"}
-          className="text-xl font-medium capitalize text-dark
-              underline hover:underline-offset-4 dark:text-light md:text-2xl xs:p-2 "
+          className="text-2xl font-bold capitalize text-dark underline hover:underline-offset-4 
+            dark:text-light md:text-2xl xs:p-2 "
         >
           Contact
         </Link>
