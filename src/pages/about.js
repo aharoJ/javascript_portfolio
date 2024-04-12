@@ -21,15 +21,16 @@ const About = () => {
         <Layout className="p-0 lg:p-24 md:pt-16 sm:pt-8">
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       SELFIE | DOUGHNUT          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="flex w-full">
-            <div className="flex w-2/5 justify-start md:hidden ">
+            <div className="flex w-[40%] justify-start md:hidden ">
               <VerticalSelfie />
             </div>
-            <div className="flex w-3/5 flex-row items-center p-0 md:hidden ">
-              <div className="w-[40%] items-start justify-start">
+
+            <div className="flex w-[60%] flex-row items-center p-0 md:hidden ">
+              <div className="w-[40%] items-start justify-start flex flex-col">
                 <TextAnimation
                   text="SKILLS LANGUAGES FRAMEWORKS DATABASES LIBRARIES "
-                  className="inline-block w-full  justify-start  text-4xl font-light capitalize tracking-tight 
-                    text-gray-400  dark:text-orange-200  md:mb-8 md:hidden md:text-4xl md:font-light md:!normal-case"
+                  className=" w-full flex flex-col justify-start  text-6xl font-light capitalize tracking-tight 
+                    text-gray-400 dark:text-orange-200  md:mb-8 md:hidden md:text-4xl md:font-light md:!normal-case"
                 />
               </div>
               <div className="w-[60%] ">
