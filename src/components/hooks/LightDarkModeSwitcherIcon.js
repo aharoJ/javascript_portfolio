@@ -29,7 +29,7 @@ const LightDarkModeSwticherIcon = ({ size, mobilesize, className = "" }) => {
     <motion.div
       onClick={() => setTheme(isLightMode ? "dark" : "light")}
       whileHover={{ y: -2 }}
-      whileTap={{ scale: 0.9 }}
+      whileTap={{ scale: 0.3 }}
       className={`cursor-pointer rounded-full p-3 transition-all hover:bg-gray-200 dark:hover:bg-gray-700 md:p-2 ${className}`}
     >
       <motion.a className="mx-0 p-0">
