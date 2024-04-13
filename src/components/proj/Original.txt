@@ -1,0 +1,33 @@
+
+{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ORIGINAL        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+{/* <AnimatedText text='Projects'  className='mb-16 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+<div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-6'>
+    <div className='col-span-12'>
+        <FeaturedProject 
+            title='Vivaldi'
+            img={vivaldi}
+            summary="My open-sourced Vivaldi, designed with the goal of maximizing productivity for tech-savvy users and programmers. This theme's color balance and sleek design will reduce eye strain for those who spend hours in front of the screen. For developers and power users to navigate the browser with ease."
+            github='https://github.com/aharoJ/dot-vivaldi'
+            link='https://themes.vivaldi.net/themes/nV6vpPxDvdN'
+            type='Featured Project'
+        />
+    </div>
+    <div className='col-span-6 sm:col-span-12'>
+        <Project 
+            title='Alacrrity - Terminal Emulator '
+            img={alacritty}
+            github='/'
+            link='/'
+            type='Project'
+        />
+    </div>
+    <div className='col-span-6 sm:col-span-12'>
+        <Project 
+            title='chatGPT3 - Backend in Process'
+            img={chatGPT3}
+            github='https://github.com/aharoJ/chatGPT3_GoogleCSR'
+            link='https://github.com/aharoJ/chatGPT3_GoogleCSR'
+            type='Project'
+        />
+    </div>
+</div> */}
