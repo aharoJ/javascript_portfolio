@@ -48,11 +48,11 @@ const SmallProject = ({ title, img, link, github, hashtags = [] }) => {
         </div>
       </div>
 
-      <div className="mt-2 flex w-full flex-row flex-wrap justify-start space-x-2">
+      <div className="mt-2 flex w-full flex-row flex-wrap justify-start space-x-4 ml-12">
         {hashtags.map((tag, index) => (
           <span
             key={index}
-            className="text-2xl mx-6 font-normal text-dark/80 dark:text-light/80 md:text-sm md:font-light md:tracking-tighter"
+            className="text-2xl mx-0 font-normal text-dark/80 dark:text-light/80 md:text-sm md:font-light md:tracking-tighter"
           >
             #{tag}
           </span>
