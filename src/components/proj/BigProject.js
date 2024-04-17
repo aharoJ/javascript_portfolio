@@ -29,7 +29,7 @@ const BigProject = ({
         <Link
           href={link}
           target="_blank"
-          className="w-[50%] cursor-pointer overflow-hidden rounded-lg lg:w-full"
+          className="w-auto cursor-pointer overflow-hidden rounded-lg lg:w-full"
         >
           <FramerImage
             src={img}
@@ -52,38 +52,41 @@ const BigProject = ({
             {hashtags.map((tag, index) => (
               <span
                 key={index}
-                className="text-3xl font-normal  text-dark/80 dark:text-light/80"
+                className="text-2xl font-normal  text-dark/80 dark:text-light/80"
               >
                 #{tag}
               </span>
             ))}
           </div>
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Title | Description         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="ml-4 flex w-full flex-col ">
-            <Link href={link} target="_blank">
-              <h2 className="my-2  text-left text-9xl font-semibold text-gray-400 dark:text-orange-200 sm:text-sm">
-                {title}
-              </h2>
-            </Link>
-
-            <p className="my-2 px-2 text-3xl font-medium text-dark dark:text-light sm:text-sm">
-              {description}
-            </p>
+          <div className="ml-6 flex w-auto flex-row ">
+            <div className="w-1/2">
+              <Link href={link} target="_blank">
+                <h2 className="my-2  text-left text-7xl font-semibold text-gray-400 dark:text-orange-200 sm:text-sm">
+                  {title}
+                </h2>
+              </Link>
+            </div>
+            <div className="w-1/2">
+              <div className="mt-6 mx-6 space-x-4 flex  items-center justify-end">
+                <Link href={github} target="_blank" className="w-12">
+                  <GithubIcon />
+                </Link>
+                <Link
+                  href={link}
+                  target="_blank"
+                  className="rounded-lg bg-dark p-2 text-2xl font-semibold text-light 
+                dark:bg-light dark:text-dark"
+                >
+                  Visit Project
+                </Link>
+              </div>
+            </div>
           </div>
+          <p className="my-2 px-6  text-2xl font-normal text-dark/80 dark:text-light sm:text-sm">
+            {description}
+          </p>
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Icon | Visit Project         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="mt-2 flex w-full items-center justify-end">
-            <Link href={github} target="_blank" className="w-16">
-              <GithubIcon />
-            </Link>
-            <Link
-              href={link}
-              target="_blank"
-              className="ml-4 rounded-lg bg-dark p-2 px-4 text-2xl font-semibold text-light 
-                dark:bg-light dark:text-dark sm:px-4 sm:text-base"
-            >
-              Visit Project
-            </Link>
-          </div>
         </div>
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
       </div>
