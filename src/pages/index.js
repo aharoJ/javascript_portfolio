@@ -9,7 +9,7 @@ import LandingProject from "@/components/experience/LandingProject";
 import ResumeContactButton from "@/components/button/ResumeContactButton";
 
 const Home = () => {
-  const alan = `Until you make the unconscious conscious, it will direct your life and you will call it fate. You are a function of what the whole universe is doing in the same way that a wave is a function of what the whole ocean is doing. - Watts`;
+  const alan = `Until you make the unconscious conscious, it will direct your life and you will call it fate. You are a function of what the whole universe is doing in the same way that a wave is a function of what the whole ocean is doing. ~ Alan Watts`;
   return (
     <>
       <Head>
