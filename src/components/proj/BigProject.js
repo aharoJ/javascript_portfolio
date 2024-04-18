@@ -52,7 +52,7 @@ const BigProject = ({
             {hashtags.map((tag, index) => (
               <span
                 key={index}
-                className="text-2xl font-normal  text-dark/80 dark:text-light/80"
+                className="text-2xl font-light  text-dark/80 dark:text-light/80"
               >
                 #{tag}
               </span>
