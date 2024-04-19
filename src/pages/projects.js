@@ -3,20 +3,13 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import React from "react";
 import TransitionEffect from "@/components/animation/TransitionEffect";
-import apple from "public/images/projects/apple.png";
-import vivaldi from "public/images/projects/vivaldi.png";
-import inboxapp from "public/images/projects/inbox-app.png";
-import machinelearning from "public/images/projects/machine-learning.png";
-import alacritty from "public/images/projects/vim.png";
 import hackingtwitter from "public/images/projects/hacking-twitter.png";
-import skhd_yabai from "public/images/projects/yabai_skhd.png";
-import tmux from "public/images/projects/tmux.png";
-import lf from "public/images/projects/lf.png";
-import starship from "public/images/projects/starship.png";
-import chatgpt3 from "public/images/projects/chatgpt3.png";
 import BigProject from "@/components/proj/BigProject";
-import SmallProject from "@/components/proj/SmallProject";
-
+import HorizantalMiniViewing from "@/components/experience/HorizantalMiniViewing";
+import alacritty from "public/images/projects/alacritty.png";
+import TextAnimation from "@/components/animation/TextAnimation";
+import notebook from "public/images/projects/NoteBook.png";
+import twiter from "public/images/projects/twitter.png";
 
 const Projects = () => {
   return (
@@ -31,192 +24,57 @@ const Projects = () => {
         <Layout className="pt-16">
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Full Stack        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <AnimatedText
-            text="Full Stack"
-            className="mb-8 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            text="Featured Projects"
+            className="mb-16 text-8xl text-gray-400 dark:text-orange-200 sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-24  md:gap-x-6 md:gap-y-10">
+          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-48  md:gap-x-6 md:gap-y-10">
             <div className="col-span-12">
               <BigProject
                 title="Twitter"
-                img={hackingtwitter}
-                description="Solo reverse engineering Twitter. Stack: Spring Boot, Java, React, TypeScript, postgresql. "
+                img={twiter}
+                description="A Solo Project using full stack development. For the tech stack we are using Java, Spring Boot, Spring Security, and Postman for backend stability. Managing credentians, forms, logins, signs with PostgreSQL for robust data management. For the frontend we are using TypeScript with React with vanilla html and css for an interactive UI experience."
                 github="https://github.com/aharoJ/twitter-clone"
-                link="https://github.com/aharoJ/twitter-clone"
+                link="https://github.com/aharoJ/twitter"
                 hashtags={[
-                  "twitter [x]",
-                  "spring boot",
-                  "java",
-                  "react",
-                  "typescript",
-                  "postgreSQL",
+                  "Twitter",
+                  "Spring",
+                  "Java",
+                  "React",
+                  "Typescript",
+                  "PostgreSQL",
                 ]}
               />
             </div>
             <div className="col-span-12">
               <BigProject
-                title="Apple"
-                img={apple}
-                description="Apple fullstack app using Typescript, Jsx, Tailwindcss, NextJs, Redux, Sanity, Stripe Studio and more..."
+                title="MyNotebook"
+                img={notebook}
+                description=" Python notebooks for data analysis with Numpy and Pandas.
+                  Data visualization samples using Matplotlib and Seaborn.Projects like a neural network for BRDF reflectance prediction, 
+                  an end-to-end machine learning workflow, and a model for house price prediction. 
+                  Available for enhanced viewing with Obsidian for a more interactive experience."
                 github="https://github.com/aharoJ/Apple_Re-design"
-                link="https://github.com/aharoJ/Apple_Re-design"
+                link="https://github.com/aharoJ/JupyterNotebook"
                 hashtags={[
-                  "fullstack",
-                  "typescript",
-                  "tsx",
-                  "tailwindCSS",
-                  "nextJs",
-                  "redux",
-                  "sanity",
+                  "MachineLearning",
+                  "NeuralNetworks",
+                  "PredictiveModeling",
+                  "DL",
                 ]}
               />
             </div>
           </div>
 
-          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Backend Dev          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <AnimatedText
-            text="Backend Dev"
-            className="mb-8 mt-8 text-6xl font-light sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
-          <div className="grid grid-cols-12 gap-x-12 gap-y-8 md:gap-x-6 md:gap-y-10">
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                img={inboxapp}
-                title="Inbox Application"
-                github="https://github.com/aharoJ/InboxApp"
-                link="https://github.com/aharoJ/InboxApp"
-                hashtags={[
-                  "java",
-                  "spring boot",
-                  "spring security",
-                  "thymleaf",
-                ]} 
-              />
-            </div>
-          </div>
-
-          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Frontend Dev          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <AnimatedText
-            text="Frontend Dev"
-            className="mb-8 mt-8 text-6xl font-light sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
-          <div className="grid grid-cols-12 gap-x-12 gap-y-8 md:gap-x-6 md:gap-y-10">
-            <div className="col-span-6  sm:col-span-12">
-              <SmallProject
-                title="chatGPT3"
-                img={chatgpt3}
-                github="https://github.com/aharoJ/chatGPT3_React"
-                link="https://github.com/aharoJ/chatGPT3_React"
-                hashtags={["react", "html", "css", "javascript"]} // <-- Added the hashtags prop here
-              />
-            </div>
-          </div>
-
-          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Machine Learning          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <AnimatedText
-            text="Machine Learning"
-            className=" b-8 mt-20 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
-          <div className="grid grid-cols-12 gap-x-12 gap-y-32 md:gap-x-6 md:gap-y-10">
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="Machine Learning"
-                img={machinelearning}
-                summary="Over 8,000 lines of markdown notes on Artificial Intelligence, Capstone Project, Code, Documentation and more..,"
-                github="https://github.com/aharoJ/opensource/tree/main/machine-learning"
-                link="https://github.com/aharoJ/opensource/tree/main/machine-learning"
-                hashtags={[
-                  "ai",
-                  "machine learning",
-                  "capstone",
-                  "deep learning",
-                  "jupyter",
-                ]} 
-              />
-            </div>
-          </div>
-
-          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Dot Files          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <AnimatedText
-            text="Dot Files"
-            className="mb-8 mt-20 text-8xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
-          <div className="grid grid-cols-12 gap-x-12 gap-y-8 md:gap-x-6 md:gap-y-10">
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="yabai-skhd-config"
-                img={skhd_yabai}
-                github="https://github.com/aharoJ/yabai-skhd-config"
-                link="https://github.com/aharoJ/yabai-skhd-config"
-                hashtags={[
-                  "hacking MacOS",
-                  "shell scripting",
-                  "skhd-config",
-                  "yabai-config",
-                ]} 
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="tmux-config"
-                img={tmux}
-                github="https://github.com/aharoJ/tmux-config"
-                link="https://github.com/aharoJ/tmux-config"
-                hashtags={["handcrafted design", "catppuccin", "tmux-config"]} 
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="lf-config"
-                img={lf}
-                github="https://github.com/aharoJ/lf-config"
-                link="https://github.com/aharoJ/lf-config"
-                hashtags={[
-                  "shell scripting",
-                  "custom Scripts",
-                  "kitty-config",
-                  "lf-config",
-                ]} 
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="starship-config"
-                img={starship}
-                github="https://github.com/aharoJ/starship-config"
-                link="https://github.com/aharoJ/starship-config"
-                hashtags={[
-                  "custom toml file",
-                  "hand-picked colors",
-                  "timezone",
-                  "starship-config",
-                ]} 
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="vivaldi-config"
-                img={vivaldi}
-                summary="My open-sourced Vivaldi, designed with the goal of maximizing productivity for tech-savvy users and programmers. 
-                    This theme seeks balance and sleek design will reduce eye strain for those who spend hours in front of the screen. For developers and power users to navigate the browser with ease."
-                github="https://github.com/aharoJ/vivaldi-config"
-                link="https://themes.vivaldi.net/themes/nV6vpPxDvdN"
-                hashtags={["custom binds", "hotkeys", "vialdi-config"]} 
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SmallProject
-                title="alacritty-config"
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       NEW DIV          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          <div className="mt-36 flex w-full">
+            <div className="flex w-auto justify-center md:hidden ">
+              <HorizantalMiniViewing
                 img={alacritty}
-                github="https://github.com/aharoJ/alacritty-config"
-                link="https://github.com/aharoJ/alacritty-config"
-                hashtags={[
-                  "terminal emulator",
-                  "yalm file",
-                  "alacritty-config",
-                ]} 
+                link="https://aharoj.io/viewing"
               />
             </div>
           </div>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         </Layout>
       </main>
     </>
