@@ -62,7 +62,7 @@ const BigProject = ({
           <div className="ml-6 flex w-auto flex-row ">
             <div className="w-1/2">
               <Link href={link} target="_blank">
-                <h2 className="my-2  text-left text-7xl font-semibold text-gray-400 dark:text-orange-200 sm:text-sm">
+                <h2 className="my-2 text-left text-7xl hover:underline  font-semibold text-gray-400 dark:text-orange-200 sm:text-sm">
                   {title}
                 </h2>
               </Link>
