@@ -7,12 +7,12 @@ const FramerImage = motion(Image);
 const HorizantalMiniViewing = ({ img, link }) => {
   return (
     <article
-      className="relative flex w-[63%] flex-col items-center justify-center rounded-2xl border 
-      border-solid border-dark bg-light p-6 dark:border-light dark:bg-dark md:p-2"
+      className="relative flex w-[73%] flex-col items-center justify-center rounded-2xl border 
+      border-solid border-dark bg-light p-4 dark:border-light dark:bg-dark "
     >
       <div
         className="absolute -right-2.5 top-0 -z-10 h-[101%] w-[101%] rounded-[1rem] rounded-br-3xl 
-        bg-dark/80 dark:bg-light md:h-[102%] md:w-[101%] md:rounded-br-xl"
+        bg-dark/80 dark:bg-light "
       />
 
       <Link
@@ -30,15 +30,14 @@ const HorizantalMiniViewing = ({ img, link }) => {
 
       <div className="mt-4 w-full self-center lg:self-center">
         <Link
-          href="https://aharoj.io/viewing"
+          href="https://aharoj.io/all-projects"
           className="flex items-center justify-center rounded-lg border border-solid border-transparent
-            bg-gray-800 p-1 text-base text-light hover:border-dark hover:bg-light
+            bg-gray-500 p-1 text-base text-light hover:border-dark hover:bg-light
             hover:text-dark dark:bg-gray-400 hover:dark:border-light
-            hover:dark:bg-light hover:dark:text-dark/80 md:mx-4
-            md:p-2 xs:p-0.5 xs:text-sm"
+            hover:dark:bg-light hover:dark:text-dark/80 "
         >
           <p className="text-5xl font-extrabold tracking-wide ">
-            VISIT All PROJECTS
+             ALL PROJECTS
           </p>
         </Link>
       </div>
