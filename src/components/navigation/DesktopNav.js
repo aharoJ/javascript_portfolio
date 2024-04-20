@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
-import { SunIcon, MoonIcon } from "../icons/SvgIcons";
-import { motion, useAnimation } from "framer-motion";
 import useThemeSwitcher from "../hooks/useThemeSwitcher.js";
 import SocialMediaLinks from "../icons/SocialMediaIcons";
-import LightDarkButton from "../icons/MoonSunIcon";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -16,14 +13,12 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
       <span
         className={`
-                ease absolute -bottom-0.5
-                left-0 inline-block h-[1px]
-                bg-dark transition-[width] duration-500 group-hover:w-full
-                ${router.asPath === href ? "w-full" : "w-0"}
-                dark:bg-light
+          ease absolute -bottom-0.5 left-0 inline-block h-[1px]
+          bg-dark transition-[width] duration-500 group-hover:w-full
+          ${router.asPath === href ? "w-full" : "w-0"}
+          dark:bg-light
                 `}
       >
-        &nbsp;
       </span>
     </Link>
   );
@@ -55,22 +50,15 @@ const DesktopNav = () => {
     >
       {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Home About           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
       <nav>
-        <CustomLink href="/" title="Home" className="m-6 text-2xl" />
-        <CustomLink href="/about" title="About" className="m-6 text-2xl" />
-        <CustomLink
-          href="/projects"
-          title="Projects"
-          className="m-6 text-2xl"
-        />
-        {/* Rest of your links here */}
+        <CustomLink href="/" title="Home" className="mx-4 text-2xl" />
+        <CustomLink href="/about" title="About" className="mx-4 text-2xl" />
+        <CustomLink href="/featured" title="Featured" className="mx-4 text-2xl" />
+        <CustomLink href="/projects" title="Projects" className="mx-4 text-2xl" />
       </nav>
 
       {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ICONS for Desktop          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
       <nav className="flex items-center justify-center">
         <SocialMediaLinks size={30} />{" "}
-        {/* Optional: classname, size, mobilesize */}
-        {/* <LightDarkButton size={30} className="p-0" />{" "} */}
-        {/* Optional classname, size, mobilesize */}
       </nav>
     </div>
   );
