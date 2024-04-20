@@ -35,14 +35,7 @@ const SmallProject = ({ title, img, link, github, hashtags = [] }) => {
           </Link>
         </h2>
         <div className="flex items-center space-x-8 mx-6">
-          <Link
-            href={link}
-            target="_blank"
-            className="text-2xl font-semibold underline underline-offset-4 dark:text-light/70 md:text-base"
-          >
-            Visit Project
-          </Link>
-          <Link href={github} target="_blank" className="w-10 ">
+          <Link href={github} target="_blank" className="w-11 ">
             <GithubIcon />
           </Link>
         </div>
