@@ -63,7 +63,7 @@ function WrapperLanguageTabs() {
               }`}
               onClick={() => toggleTab(index)}
             >
-              <tab.icon className="mr-0" />
+              <tab.icon className="mr-6" />
               {tab.label}
             </button>
             {activeTab === index && (
