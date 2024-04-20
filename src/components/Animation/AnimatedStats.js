@@ -38,12 +38,12 @@ const LoadIcon = ({ icon: Icon, value, label }) => {
     >
       <div className="flex flex-row items-center">
         {Icon && <Icon size={50} className="mr-2" />}
-        <span className="inline-block text-5xl font-semibold md:text-3xl">
+        <span className="inline-block text-7xl font-semibold md:text-3xl">
           <AnimateNumbers value={value} />
         </span>
       </div>
 
-      <h2 className="text-lg font-light capitalize tracking-tight text-dark/75 dark:text-light/75 xl:text-center md:text-lg ">
+      <h2 className="text-2xl font-light capitalize tracking-tight text-dark/75 dark:text-light/75 xl:text-center md:text-lg ">
         {label}
       </h2>
     </div>
@@ -52,36 +52,38 @@ const LoadIcon = ({ icon: Icon, value, label }) => {
 
 const AnimatedStats = () => {
   return (
-    <div className="mb-12 mt-12 flex flex-row items-center justify-center space-x-16 md:mb-0 md:mt-0 md:flex-col md:space-x-0 ">
+    <div className="mb-12 mt-12 flex flex-row items-center justify-center space-x-24 md:mb-0 md:mt-0 md:flex-col md:space-x-0 ">
+      {/* I believe className here do not take affect for loading the icons */}
       <LoadIcon
         icon={BsFileEarmarkBinary}
-        value={5}
+        value={6}
         label="LANGUAGES "
-        className=" ml-4 mr-4 md:ml-0 md:mr-0 md:mt-2"
+        // className="  md:ml-0 md:mr-0 md:mt-2"
       />
       <LoadIcon
         icon={RiOpenSourceFill}
         value={17}
         label="OPENSOURCE"
-        className=" ml-4 mr-4 md:ml-0 md:mr-0 md:mt-2"
       />
       <LoadIcon
         icon={FaSchool}
         value={13}
         label="PARTNERSHIPS FORGED "
-        className=" ml-4 mr-4 md:ml-0 md:mr-0 md:mt-2"
       />
       <LoadIcon
         icon={GiTeacher}
         value={127}
         label="STUDENTS MENTORED"
-        className=" ml-4 mr-4 md:ml-0 md:mr-0 md:mt-2"
       />
       <LoadIcon
         icon={FiGitCommit}
         value={1644}
         label="CODE COMMITS"
-        className=" ml-4 mr-4 md:ml-0 md:mr-0 md:mt-2"
+      />
+      <LoadIcon
+        icon={FiGitCommit}
+        value={93}
+        label="LeetCode"
       />
     </div>
   );
