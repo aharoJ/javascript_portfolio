@@ -7,7 +7,7 @@ const HorizantalSelfie = () => {
     <>
       <div
         className="relative mb-5 flex h-auto w-[100%] rounded-2xl border-0
-        border-solid border-dark bg-light dark:bg-gray-600 md:w-[100%] xs:w-[80%]"
+        border-solid border-dark bg-light dark:bg-gray-600 md:w-[100%] "
       >
         <div className="absolute -right-2 top-0 -z-20 h-[102%] w-[100%] rounded-[1.5rem] bg-dark dark:bg-white" />
         <Image
