@@ -17,7 +17,6 @@ const HorizantalMiniViewing = ({ img, link }) => {
 
       <Link
         href={link}
-        target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <FramerImage
@@ -32,7 +31,6 @@ const HorizantalMiniViewing = ({ img, link }) => {
       <div className="mt-4 w-full self-center lg:self-center">
         <Link
           href="https://aharoj.io/viewing"
-          target={"_blank"}
           className="flex items-center justify-center rounded-lg border border-solid border-transparent
             bg-gray-800 p-1 text-base text-light hover:border-dark hover:bg-light
             hover:text-dark dark:bg-gray-400 hover:dark:border-light
