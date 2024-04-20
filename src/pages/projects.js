@@ -6,9 +6,10 @@ import TransitionEffect from "@/components/animation/TransitionEffect";
 import BigProject from "@/components/proj/BigProject";
 import HorizantalMiniViewing from "@/components/experience/HorizantalMiniViewing";
 import alacritty from "public/images/projects/alacritty.png";
-import TextAnimation from "@/components/animation/TextAnimation";
 import notebook from "public/images/projects/notebook.png";
 import twiter from "public/images/projects/twitter.png";
+import WrapperMobileFeaturedProject from "@/components/proj/WrapperMobileFeaturedProject";
+import WrapperHorizantalMiniViewing from "@/components/proj/WrapperHorizantalMiniViewing";
 
 const Projects = () => {
   return (
@@ -19,14 +20,25 @@ const Projects = () => {
       </Head>
       <TransitionEffect />
 
-      <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+      <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-light ">
+        <Layout className="pt-16 ">
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       LINK TO ALL-PROJECTS          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          <div className="my-8 flex w-auto justify-center md:hidden">
+            <HorizantalMiniViewing
+              img={alacritty}
+              link="https://aharoj.io/all-projects"
+            />
+          </div>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+           
+
+
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Full Stack        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <AnimatedText
             text="Featured Projects"
-            className="mb-16 text-8xl text-gray-400 dark:text-orange-200 sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            className="mb-16 text-8xl text-gray-400 dark:text-orange-200 md:hidden sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-28  md:gap-x-6 md:gap-y-10">
+          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-28   md:hidden md:gap-x-6 md:gap-y-10">
             <div className="col-span-12">
               <BigProject
                 title="Twitter"
@@ -64,14 +76,18 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       NEW DIV          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="mt-36 flex w-full">
-            <div className="flex w-auto justify-center md:hidden ">
-              <HorizantalMiniViewing
-                img={alacritty}
-                link="https://aharoj.io/all-projects"
-              />
-            </div>
+
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      iPHONE FEATURED PROJECTS          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          <div className="iPhone-Featured-Projects hidden md:block">
+            <WrapperMobileFeaturedProject />
+          </div>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       LINK TO ALL-PROJECTS          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          <div className="mt-28 hidden w-auto justify-center md:block">
+            <WrapperHorizantalMiniViewing
+              img={alacritty}
+              link="https://aharoj.io/all-projects"
+            />
           </div>
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         </Layout>
