@@ -3,12 +3,11 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import React from "react";
 import TransitionEffect from "@/components/animation/TransitionEffect";
-import hackingtwitter from "public/images/projects/hacking-twitter.png";
 import BigProject from "@/components/proj/BigProject";
 import HorizantalMiniViewing from "@/components/experience/HorizantalMiniViewing";
 import alacritty from "public/images/projects/alacritty.png";
 import TextAnimation from "@/components/animation/TextAnimation";
-import notebook from "public/images/projects/NoteBook.png";
+import notebook from "public/images/projects/notebook.png";
 import twiter from "public/images/projects/twitter.png";
 
 const Projects = () => {
@@ -27,7 +26,7 @@ const Projects = () => {
             text="Featured Projects"
             className="mb-16 text-8xl text-gray-400 dark:text-orange-200 sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-48  md:gap-x-6 md:gap-y-10">
+          <div className="grid grid-cols-12 gap-24 gap-x-8 gap-y-28  md:gap-x-6 md:gap-y-10">
             <div className="col-span-12">
               <BigProject
                 title="Twitter"
@@ -70,7 +69,7 @@ const Projects = () => {
             <div className="flex w-auto justify-center md:hidden ">
               <HorizantalMiniViewing
                 img={alacritty}
-                link="https://aharoj.io/viewing"
+                link="https://aharoj.io/all-projects"
               />
             </div>
           </div>
