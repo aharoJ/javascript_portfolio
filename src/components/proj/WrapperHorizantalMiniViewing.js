@@ -30,7 +30,7 @@ const WrapperHorizantalMiniViewing = ({ img, link }) => {
 
       <div className="mt-0 w-full self-center ">
         <Link
-          href="https://aharoj.io/all-projects"
+          href="https://aharoj.io/projects"
           className="flex items-center justify-center rounded-lg border border-solid border-transparent
             p-0 text-dark dark:text-light"
         >
