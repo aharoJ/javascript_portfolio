@@ -6,7 +6,7 @@ import profile_pic from "public/images/profile/aharoJ.jpg";
 const VerticalSelfie = () => {
   return (
     <>
-      <div className="flex w-[55%] flex-col p-2 md:mb-8 md:w-[90%] md:items-center md:justify-center">
+      <div className="flex w-[85%] flex-col p-2 md:mb-8 md:w-[90%] md:items-center md:justify-center">
         <div
           className=" relative h-auto w-auto rounded-3xl border-2 border-solid border-dark 
             bg-light p-2 hover:border-4 hover:border-pink-900 
