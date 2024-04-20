@@ -3,6 +3,7 @@ import AnimatedText from "@/components/animation/TextAnimation";
 import FeaturedProject from "@/components/abstract/FeaturedProject";
 import project from "public/images/projects/opensource-portfolio.png";
 import BigProject from "../proj/BigProject";
+import FeaturedMobileProject from "../proj/FeaturedMobileProject";
 
 const LandingProject = () => {
   return (
@@ -12,7 +13,7 @@ const LandingProject = () => {
         text="Open Source "
         className=" tracking mb-8 mt-3 text-8xl font-normal text-gray-400 dark:text-orange-200 sm:mb-8 sm:!text-6xl xs:!text-4xl"
       />
-      <div className="grid grid-cols-12 gap-x-8 gap-y-8 md:gap-x-6 md:gap-y-10">
+      <div className="grid grid-cols-12 gap-x-8 gap-y-8  md:gap-x-6 md:gap-y-10">
         <div className="col-span-12">
           <BigProject
             title="Portfolio "
