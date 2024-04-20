@@ -48,7 +48,7 @@ const FeaturedMobileProject = ({
         {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       CONTENT         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
         <div className="flex w-[50%] flex-col md:w-full">
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       TAGS         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="flex flex-wrap justify-start space-x-4">
+          <div className="flex flex-wrap justify-start space-x-1">
             {hashtags.map((tag, index) => (
               <span
                 key={index}
@@ -61,11 +61,11 @@ const FeaturedMobileProject = ({
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Title | Description         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="flex w-auto flex-row items-center justify-center space-x-6">
             <Link href={link} target="_blank">
-              <h2 className="my-2 text-left text-xl font-semibold text-gray-400 hover:underline dark:text-orange-200 ">
+              <h2 className="my-0 text-left text-3xl font-semibold text-gray-400 hover:underline dark:text-orange-200 ">
                 {title}
               </h2>
             </Link>
-            <Link href={github} target="_blank" className="w-6">
+            <Link href={github} target="_blank" className="w-7">
               <GithubIcon />
             </Link>
           </div>
