@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        Framer Image        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 const FramerImage= motion(Image);
 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        Project         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-const Project = ({ title, img, link, github, hashtags = [] }) => {  
+const NormalProject = ({ title, img, link, github, hashtags = [] }) => {  
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl p-2 relative
         border border-solid border-dark bg-light dark:bg-dark dark:border-light
@@ -60,5 +60,4 @@ const Project = ({ title, img, link, github, hashtags = [] }) => {
     )
 }
 
-
-export default Project
+export default NormalProject;
