@@ -12,7 +12,7 @@ const Timeline = () => {
 
   return (
     <div className="container-for-experience">
-      <h2 className="mb-6 mt-6 w-full text-center text-5xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:text-2xl">
+      <h2 className="mb-6 mt-6 w-full text-center text-7xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:text-5xl">
         Education
       </h2>
 
@@ -37,7 +37,7 @@ const Timeline = () => {
             // }
           />
 
-          <h2 className="mb-6 mt-6 w-full text-center text-5xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:text-2xl">
+          <h2 className="mb-6 mt-6 w-full text-center text-7xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:text-5xl">
             Experience
           </h2>
 
