@@ -72,19 +72,25 @@ const MobileNav = () => {
                 <CustomMobileLink
                   href="/"
                   title="Home"
-                  className="px-5 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
+                  className="px-2 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
                   toggle={handleClick}
                 />
                 <CustomMobileLink
                   href="/about"
                   title="About"
-                  className="px-5 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
+                  className="px-2 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
+                  toggle={handleClick}
+                />
+                <CustomMobileLink
+                  href="/featured"
+                  title="Featured"
+                  className="px-2 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
                   toggle={handleClick}
                 />
                 <CustomMobileLink
                   href="/projects"
                   title="Projects"
-                  className="px-5 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
+                  className="px-2 text-xl font-medium tracking-tight !text-gray-400 dark:!text-orange-200"
                   toggle={handleClick}
                 />
 
@@ -94,7 +100,7 @@ const MobileNav = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2, duration: 4 }}
                   onClick={handleClick}
-                  className="text-md px-5 font-extrabold  tracking-tighter text-red-400/80 hover:bg-opacity-80 "
+                  className="text-md px-2 font-extrabold  tracking-tighter text-red-400/80 hover:bg-opacity-80 "
                 >
                   EXIT
                 </motion.button>
