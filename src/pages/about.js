@@ -8,6 +8,8 @@ import Timeline from "@/components/experience/TimeLine";
 import TabsLanguageSkills from "@/components/abstract/TabsLanguageSkills";
 import VerticalSelfie from "@/components/experience/VerticalSelfie";
 import TextAnimation from "@/components/animation/TextAnimation";
+import LanguageTabs from "@/components/tabs/LanguageTabs";
+import WrapperLanguageTabs from "@/components/tabs/WrapperLanguageTabs";
 
 const About = () => {
   return (
@@ -25,11 +27,11 @@ const About = () => {
               <VerticalSelfie />
             </div>
 
-            <div className="flex w-[70%] flex-row items-center mx-2 md:hidden ">
-              <div className="w-[40%] items-center justify-start flex flex-col">
+            <div className="mx-2 flex w-[70%] flex-row items-center md:hidden ">
+              <div className="flex w-[40%] flex-col items-center justify-start">
                 <TextAnimation
                   text="SKILLS LANGUAGES FRAMEWORKS DATABASES LIBRARIES "
-                  className=" w-full flex flex-col justify-start  text-6xl font-light capitalize tracking-tight 
+                  className=" flex w-full flex-col justify-start  text-6xl font-light capitalize tracking-tight 
                     text-gray-400 dark:text-orange-200  md:mb-8 md:hidden md:text-4xl md:font-light md:!normal-case"
                 />
               </div>
@@ -49,9 +51,14 @@ const About = () => {
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       LANGUAGE TABS         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
-          <div className="mt-12 flex w-[100%] justify-evenly md:hidden ">
-            <TabsLanguageSkills />
+          <div className="deskttop-LanguageTabs mt-12 flex w-[100%] justify-evenly md:hidden ">
+            <LanguageTabs />
           </div>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       iPHONE PROJECTS          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
+          <div className="iPhone-LanguageTabs hidden md:block">
+            <WrapperLanguageTabs />
+          </div>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ...........         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
 
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       TIMELINE          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
