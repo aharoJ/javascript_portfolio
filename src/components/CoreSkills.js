@@ -25,7 +25,7 @@ const Skill = ({ name, x, y }) => {
 const CoreSkills = () => {
   return (
     <>
-      <h2 className="mt-16 w-full text-center text-5xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:mt-16 md:text-6xl">
+      <h2 className="my-16 w-full text-center text-7xl font-light tracking-tight text-gray-400 dark:text-orange-200 md:mt-16 md:text-6xl">
         Core Skills
       </h2>
       <div
