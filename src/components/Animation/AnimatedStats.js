@@ -33,7 +33,7 @@ const LoadIcon = ({ icon: Icon, value, label }) => {
   return (
     <div
       className={
-        "flex flex-col items-end justify-center md:mt-8 md:items-center"
+        "flex flex-col items-end justify-center md:mt-0 md:items-center"
       }
     >
       <div className="flex flex-row items-center">
