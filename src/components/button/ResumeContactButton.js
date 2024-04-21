@@ -3,7 +3,7 @@ import React from "react";
 
 const ResumeContactButton = () => {
   return (
-    <div className="mt-2 flex w-[100%] flex-row items-center justify-between space-x-0 md:flex-row md:space-x-8 md:space-y-0">
+    <div className="mt-2 flex w-[100%] flex-row items-center justify-between space-x-0 md:flex-row md:space-x-8 md:space-y-0 md:mt-0">
       <div className="w-1/2 whitespace-nowrap md:flex md:w-[100%] md:flex-row md:justify-evenly">
         <Link
           href="https://aharoj.io/about"
