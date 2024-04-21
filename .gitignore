@@ -115,3 +115,5 @@ tailwind.config.js
 # Ignore Next.js configuration file
 next.config.js
 ##############################################################
+src/components/gio.css
+src.zip
