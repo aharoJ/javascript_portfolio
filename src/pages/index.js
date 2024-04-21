@@ -20,7 +20,7 @@ const Home = () => {
       <TransitionEffect />
 
       <main className="flex min-h-screen w-full items-center text-dark dark:text-light">
-        <Layout className="pt-16 md:pt-16 sm:pt-8">
+        <Layout className="">
           {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       Selfie | Name | Summary | Buttons         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}
           <div className="flex w-full md:flex-col md:items-center md:justify-center">
             <div className="w-[37%] md:w-[100%]">
@@ -30,12 +30,12 @@ const Home = () => {
               <TextAnimation
                 text="Angel J. Haro"
                 className="mb-2 justify-center text-9xl font-light tracking-wider text-gray-400 
-                dark:text-orange-200 md:mb-8 md:flex-wrap md:text-5xl md:font-light md:!normal-case"
+                dark:text-orange-200 md:mb-4 md:flex-wrap md:text-6xl md:font-light "
               />
-              <div className="flex w-[90%] items-center self-center md:mb-8 md:flex-wrap">
-                <p className="text-3xl font-normal md:font-light">{alan} </p>
+              <div className="flex w-[90%] items-center self-center md:mb-0 md:flex-wrap">
+                <p className="text-3xl font-normal md:font-light md:text-xl md:w-full">{alan} </p>
               </div>
-              <div className="my-4 flex w-[50%] md:w-[100%]">
+              <div className="my-4 flex w-[50%] md:w-[100%] md:my-12">
                 <ResumeContactButton />
               </div>
             </div>
