@@ -7,7 +7,7 @@ const ArticleList = ({ articles, onDelete }) => {
 
   const handleEdit = (article) => {
     dispatch(setEditingArticle(article));
-  }
+  };
 
   return (
     <div className="articles-container">

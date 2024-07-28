@@ -60,31 +60,11 @@ const AnimatedStats = () => {
         label="LANGUAGES "
         // className="  md:ml-0 md:mr-0 md:mt-2"
       />
-      <LoadIcon
-        icon={RiOpenSourceFill}
-        value={17}
-        label="OPENSOURCE"
-      />
-      <LoadIcon
-        icon={FaSchool}
-        value={13}
-        label="PARTNERSHIPS FORGED "
-      />
-      <LoadIcon
-        icon={GiTeacher}
-        value={127}
-        label="STUDENTS MENTORED"
-      />
-      <LoadIcon
-        icon={FiGitCommit}
-        value={1644}
-        label="CODE COMMITS"
-      />
-      <LoadIcon
-        icon={FiGitCommit}
-        value={93}
-        label="LeetCode"
-      />
+      <LoadIcon icon={RiOpenSourceFill} value={17} label="OPENSOURCE" />
+      <LoadIcon icon={FaSchool} value={13} label="PARTNERSHIPS FORGED " />
+      <LoadIcon icon={GiTeacher} value={127} label="STUDENTS MENTORED" />
+      <LoadIcon icon={FiGitCommit} value={1644} label="CODE COMMITS" />
+      <LoadIcon icon={FiGitCommit} value={93} label="LeetCode" />
     </div>
   );
 };

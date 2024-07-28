@@ -6,7 +6,7 @@ const ArticleForm = ({ onSubmit, articleData }) => {
     title: "",
     summary: "",
     imageUrl: "",
-    link: ""
+    link: "",
   });
 
   useEffect(() => {
@@ -55,7 +55,9 @@ const ArticleForm = ({ onSubmit, articleData }) => {
         onChange={handleChange}
         placeholder="Article Link"
       />
-      <button type="submit" className="submit-btn">Submit</button>
+      <button type="submit" className="submit-btn">
+        Submit
+      </button>
     </form>
   );
 };

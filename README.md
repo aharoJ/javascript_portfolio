@@ -9,14 +9,12 @@
 <a href="https://aharoj.io"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=pink" alt="Portfolio" /></a>&nbsp;
 <a href="https://twitter.com/aharoJ"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=twitter&logoColor=blue" alt="Twitter" /></a>&nbsp;
 <a href="https://leetcode.com/aharoJ/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" alt="LeetCode" /></a>&nbsp;
-</div>  
-
+</div>
 
 ![Alt text](public/images/git-repo_image.png)
 
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Getting Started
 
 First, run the development server:
@@ -54,23 +52,16 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
-
-
-
-
-
 ## Behind The Scenes
 
 🔍 **Behind the Scenes**:
+
 - 🔧 Dug deep into **Framer Motion** for intricate animations, creating a seamless user experience.
 - 🌓 Implemented a Light/Dark mode switcher for enhanced user customization, optimizing it for both desktop and mobile.
-- 💡 Leveraged **React & Next.js** for a blazing-fast, server-side rendered application. 
+- 💡 Leveraged **React & Next.js** for a blazing-fast, server-side rendered application.
 - 🎨 Mastered the art of **TailwindCSS** to architect a responsive and modern design.
 - 🛠 Debugged and refined every minor detail, ensuring a bug-free and user-friendly environment.
 
-
-👨‍💻 **Backend**: 
+👨‍💻 **Backend**:
 
 - 🕜 Will Mostlikely re-route to a zip Google Drive Link
-

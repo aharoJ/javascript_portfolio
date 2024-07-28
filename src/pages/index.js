@@ -33,9 +33,11 @@ const Home = () => {
                 dark:text-orange-200 md:mb-4 md:flex-wrap md:text-6xl md:font-light "
               />
               <div className="flex w-[90%] items-center self-center md:mb-0 md:flex-wrap">
-                <p className="text-3xl font-normal md:font-light md:text-xl md:w-full">{alan} </p>
+                <p className="text-3xl font-normal md:w-full md:text-xl md:font-light">
+                  {alan}{" "}
+                </p>
               </div>
-              <div className="my-4 flex w-[50%] md:w-[100%] md:my-12">
+              <div className="my-4 flex w-[50%] md:my-12 md:w-[100%]">
                 <ResumeContactButton />
               </div>
             </div>

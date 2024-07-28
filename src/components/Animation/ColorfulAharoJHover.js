@@ -14,10 +14,10 @@ const ColorfulAharoJHover = () => {
     <div className="flex items-center justify-center ">
       <motion.div
         onClick={handleScrollToBottom}
-        className="flex items-center justify-center rounded-full text-6xl  mt-2 font-thin tracking-tighter order-1
-                text-dark dark:text-light
-                md:font-thin md:text-5xl md:mt-0
-                cursor-pointer" // This gives the hover hand effect
+        className="order-1 mt-2 flex cursor-pointer items-center  justify-center rounded-full text-6xl font-thin
+                tracking-tighter text-dark
+                dark:text-light md:mt-0 md:text-5xl
+                md:font-thin" // This gives the hover hand effect
         whileHover={{
           color: [
             "#6B7280",

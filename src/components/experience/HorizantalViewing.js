@@ -35,7 +35,9 @@ const HoricantalViewing = () => {
                 hover:dark:bg-dark hover:dark:text-light md:mx-4
                 md:p-2 xs:p-0.5 xs:text-sm"
             >
-              <p className="text-2xl font-extrabold tracking-tight">Visit All OPENSOURCE Projects</p>
+              <p className="text-2xl font-extrabold tracking-tight">
+                Visit All OPENSOURCE Projects
+              </p>
             </Link>
           </div>
         </div>

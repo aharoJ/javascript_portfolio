@@ -68,8 +68,8 @@ function WrapperLanguageTabs() {
             </button>
             {activeTab === index && (
               <div
-                className="text-md rounded-lg border border-gray-200 bg-gray-100 dark:bg-gray-700 dark:text-white p-2 font-normal 
-                  text-gray-600 opacity-100 transition-opacity duration-300 ease-out"
+                className="text-md rounded-lg border border-gray-200 bg-gray-100 p-2 font-normal text-gray-600 opacity-100 
+                  transition-opacity duration-300 ease-out dark:bg-gray-700 dark:text-white"
               >
                 {tab.content}
               </div>

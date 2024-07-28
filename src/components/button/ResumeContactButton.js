@@ -3,7 +3,7 @@ import React from "react";
 
 const ResumeContactButton = () => {
   return (
-    <div className="mt-2 flex w-[100%] flex-row items-center justify-between space-x-0 md:flex-row md:space-x-8 md:space-y-0 md:mt-0">
+    <div className="mt-2 flex w-[100%] flex-row items-center justify-between space-x-0 md:mt-0 md:flex-row md:space-x-8 md:space-y-0">
       <div className="w-1/2 whitespace-nowrap md:flex md:w-[100%] md:flex-row md:justify-evenly">
         <Link
           href="https://aharoj.io/about"
@@ -19,7 +19,7 @@ const ResumeContactButton = () => {
         <Link
           href="mailto:aharoJair@gmail.com"
           target={"_blank"}
-          className="text-2xl font-bold capitalize text-dark/80 underline tracking-wide hover:underline-offset-4 
+          className="text-2xl font-bold capitalize tracking-wide text-dark/80 underline hover:underline-offset-4 
             dark:text-light md:text-2xl xs:p-2 "
         >
           Contact

@@ -18,8 +18,7 @@ const CustomLink = ({ href, title, className = "" }) => {
           ${router.asPath === href ? "w-full" : "w-0"}
           dark:bg-light
                 `}
-      >
-      </span>
+      ></span>
     </Link>
   );
 };
@@ -52,8 +51,16 @@ const DesktopNav = () => {
       <nav>
         <CustomLink href="/" title="Home" className="mx-4 text-2xl" />
         <CustomLink href="/about" title="About" className="mx-4 text-2xl" />
-        <CustomLink href="/featured" title="Featured" className="mx-4 text-2xl" />
-        <CustomLink href="/projects" title="Projects" className="mx-4 text-2xl" />
+        <CustomLink
+          href="/featured"
+          title="Featured"
+          className="mx-4 text-2xl"
+        />
+        <CustomLink
+          href="/projects"
+          title="Projects"
+          className="mx-4 text-2xl"
+        />
       </nav>
 
       {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ICONS for Desktop          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */}

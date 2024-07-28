@@ -24,8 +24,8 @@ const SmallProject = ({ title, img, link, github, hashtags = [] }) => {
         />
       </Link>
 
-      <div className="mt-4 flex w-full justify-between md:justify-center md:mt-0">
-        <h2 className="text-left text-4xl mx-6 font-semibold text-gray-400 dark:text-orange-200 md:text-2xl md:mx-4">
+      <div className="mt-4 flex w-full justify-between md:mt-0 md:justify-center">
+        <h2 className="mx-6 text-left text-4xl font-semibold text-gray-400 dark:text-orange-200 md:mx-4 md:text-2xl">
           <Link
             href={link}
             target="_blank"
@@ -34,18 +34,18 @@ const SmallProject = ({ title, img, link, github, hashtags = [] }) => {
             {title}
           </Link>
         </h2>
-        <div className="flex items-center space-x-8 mx-6 md:mx-0">
+        <div className="mx-6 flex items-center space-x-8 md:mx-0">
           <Link href={github} target="_blank" className="w-11 md:w-7 ">
             <GithubIcon />
           </Link>
         </div>
       </div>
 
-      <div className="mt-2 flex w-full flex-row flex-wrap justify-start space-x-4 ml-12 md:space-x-2 md:mt-0 md:ml-0">
+      <div className="ml-12 mt-2 flex w-full flex-row flex-wrap justify-start space-x-4 md:ml-0 md:mt-0 md:space-x-2">
         {hashtags.map((tag, index) => (
           <span
             key={index}
-            className="text-2xl mx-0 font-normal text-dark/80 dark:text-light/80 md:text-sm md:font-normal md:tracking-tighter md:flex-wrap"
+            className="mx-0 text-2xl font-normal text-dark/80 dark:text-light/80 md:flex-wrap md:text-sm md:font-normal md:tracking-tighter"
           >
             #{tag}
           </span>

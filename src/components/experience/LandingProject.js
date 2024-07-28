@@ -1,9 +1,7 @@
 import React from "react";
 import AnimatedText from "@/components/animation/TextAnimation";
-import FeaturedProject from "@/components/abstract/FeaturedProject";
 import project from "public/images/projects/opensource-portfolio.png";
 import BigProject from "../proj/BigProject";
-import FeaturedMobileProject from "../proj/FeaturedMobileProject";
 
 const LandingProject = () => {
   return (

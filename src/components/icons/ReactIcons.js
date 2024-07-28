@@ -1,7 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import { useInView, useMotionValue, useSpring } from 'framer-motion';
-
-
+import React, { useRef, useEffect } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
 
 const AnimateNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -16,7 +14,7 @@ const AnimateNumbers = ({ value }) => {
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
-    springValue.on('change', (latest) => {
+    springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed();
       }
@@ -29,18 +27,16 @@ const AnimateNumbers = ({ value }) => {
 const LoadIcon = ({ icon: Icon, value, label, className }) => {
   return (
     <div className={`flex flex-col items-end justify-center ${className}`}>
-      
       <div className="flex items-center">
-        {Icon && <Icon size={50} className="mr-2" /> }
-        <span className='inline-block text-5xl font-semibold md:text-3xl'>
+        {Icon && <Icon size={50} className="mr-2" />}
+        <span className="inline-block text-5xl font-semibold md:text-3xl">
           <AnimateNumbers value={value} />
         </span>
       </div>
 
-      <h2 className='text-lg font-light capitalize text-dark/75 tracking-tight dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>
+      <h2 className="text-lg font-light capitalize tracking-tight text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
         {label}
       </h2>
-      
     </div>
   );
 };

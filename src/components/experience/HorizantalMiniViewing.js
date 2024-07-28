@@ -36,9 +36,7 @@ const HorizantalMiniViewing = ({ img, link }) => {
             hover:text-dark dark:bg-gray-400 hover:dark:border-light
             hover:dark:bg-light hover:dark:text-dark/80 "
         >
-          <p className="text-5xl font-extrabold tracking-wide ">
-             ALL PROJECTS
-          </p>
+          <p className="text-5xl font-extrabold tracking-wide ">ALL PROJECTS</p>
         </Link>
       </div>
     </article>
